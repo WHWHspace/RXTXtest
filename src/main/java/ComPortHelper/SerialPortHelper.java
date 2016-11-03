@@ -21,7 +21,7 @@ public class SerialPortHelper {
     public static ArrayList<String> findPorts(){
         //获得所有可用串口
         Enumeration<CommPortIdentifier> ports = CommPortIdentifier.getPortIdentifiers();
-        ArrayList<String> portNames = new ArrayList<>();
+        ArrayList<String> portNames = new ArrayList<String>();
         //读取所有串口的串口名称
         while (ports.hasMoreElements()){
             String name = ports.nextElement().getName();

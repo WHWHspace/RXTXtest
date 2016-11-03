@@ -19,7 +19,7 @@ public class Main {
 
     private void run() {
         ArrayList<String> portNames = SerialPortHelper.findPorts();
-        portNames.forEach(System.out::println);
+//        portNames.forEach(System.out::println);
 
         SerialPort serialPort = null;
 
